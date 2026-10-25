@@ -1,0 +1,263 @@
+   <!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BRAZIO — Ton style, ton identité.</title>
+<meta name="description" content="BRAZIO : prêt-à-porter et accessoires de mode. Choisissez vos articles et commandez sur WhatsApp ou par e-mail.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#0a0a0a;--beige:#ece3d4;--mute:#6b645a;--line:#d9d2c5;--card:#f7f2e9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--ink:#f4efe6;--beige:#2a2620;--mute:#a39b8e;--line:#2f2a24;--card:#17140f}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Manrope,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:"Bodoni Moda",Georgia,serif;margin:0;line-height:1.1}
+button{font:inherit;cursor:pointer;color:inherit}a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.w{max-width:1180px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;height:62px}
+.logo{font-weight:900;font-size:26px;letter-spacing:.12em;background:none;border:0;padding:0}
+nav{display:flex;gap:20px;margin-left:24px;flex:1}nav button,.ib{background:none;border:0;padding:6px 0;font-weight:500}
+nav button:hover{text-decoration:underline;text-underline-offset:6px}
+.ib{padding:8px;position:relative;font-size:20px}.badge{position:absolute;top:0;right:-2px;background:var(--ink);color:var(--bg);border-radius:9px;font-size:11px;min-width:18px;height:18px;line-height:18px;text-align:center}
+.burger{display:none}
+@media(max-width:820px){.burger{display:block}nav{display:none;position:absolute;top:62px;left:0;right:0;background:var(--bg);flex-direction:column;margin:0;padding:10px 20px 16px;border-bottom:1px solid var(--line);gap:4px}nav.open{display:flex}nav button{text-align:left;padding:10px 0}.sp{flex:1}}
+.srch{display:none;padding:10px 0}.srch.open{display:block}input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;border-radius:0}
+.btn{display:inline-block;padding:13px 22px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);font-weight:700;text-align:center}
+.btn.o{background:none;color:var(--ink)}.btn.wa{background:#128c4a;border-color:#128c4a;color:#fff}.btn.s{padding:9px 12px;font-size:14px}
+.hero{background:var(--ink);color:#f4efe6;overflow:hidden;position:relative}
+.hero .w{padding:72px 20px 80px}.hero h1{font-size:clamp(44px,9vw,112px);font-weight:900;max-width:900px}
+.hero p{max-width:460px;color:#cfc6b6;margin:20px 0 28px}.hero .big{position:absolute;right:-2%;bottom:-40px;font:900 clamp(120px,26vw,340px)/1 "Bodoni Moda",serif;color:#1b1813;letter-spacing:.05em;pointer-events:none}
+.hero .w{position:relative;z-index:1}
+section{padding:56px 0}.hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px;gap:12px}.hd h2{font-size:clamp(26px,4vw,38px)}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cat{background:var(--beige);border:0;padding:26px 14px;text-align:left;font:700 17px "Bodoni Moda",serif;min-height:92px}.cat:hover{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px 16px}
+.card .im{aspect-ratio:4/5;background:var(--card);display:block;width:100%;border:0;padding:0;position:relative;overflow:hidden}
+.im img,.im svg{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:10px;left:10px;background:var(--ink);color:var(--bg);font-size:12px;font-weight:700;padding:3px 8px}
+.card h3{font-size:19px;margin:12px 0 4px}.pr{font-weight:700}.old{color:var(--mute);text-decoration:line-through;font-weight:400;margin-left:8px}
+.sw{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid var(--line);margin-right:4px;vertical-align:-2px}.mt{color:var(--mute);font-size:14px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.row .btn{flex:1;min-width:120px}
+.shop{display:grid;grid-template-columns:220px 1fr;gap:28px}@media(max-width:820px){.shop{grid-template-columns:1fr}}
+.fl{display:flex;flex-direction:column;gap:12px}.pill{display:flex;flex-wrap:wrap;gap:6px}.pill button{border:1px solid var(--line);background:none;padding:7px 12px;font-size:14px}.pill button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:820px){.pd{grid-template-columns:1fr}}
+.th{display:flex;gap:8px;margin-top:8px}.th button{width:64px;aspect-ratio:1;border:1px solid var(--line);padding:0;background:var(--card);overflow:hidden}.th button.on{border-color:var(--ink)}
+.opt{margin:18px 0}.opt b{display:block;margin-bottom:8px}.pill .sc{display:inline-flex;align-items:center;gap:6px}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left}.tw{overflow-x:auto}
+.ci{display:grid;grid-template-columns:84px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}.ci .im{aspect-ratio:1}
+.q{display:inline-flex;border:1px solid var(--line)}.q button{width:34px;height:34px;background:none;border:0}.q span{width:34px;text-align:center;line-height:34px}
+.cg{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}@media(max-width:820px){.cg{grid-template-columns:1fr}}
+.box{background:var(--card);padding:20px}.fg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.fg .f{grid-column:1/-1}label{font-size:13px;color:var(--mute);display:block;margin-bottom:3px}
+.note{font-size:13px;color:var(--mute);margin-top:12px}details{border-bottom:1px solid var(--line);padding:14px 0}summary{font-weight:700;cursor:pointer}
+footer{background:var(--ink);color:#cfc6b6;padding:48px 0 90px;font-size:14px}footer h3{color:#f4efe6;font-size:18px;margin-bottom:10px}footer .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px}
+footer button,footer a{background:none;border:0;padding:3px 0;display:block;color:inherit;text-align:left;text-decoration:none}footer button:hover,footer a:hover{color:#fff;text-decoration:underline}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#128c4a;color:#fff;border:0;border-radius:28px;padding:13px 18px;font-weight:700;box-shadow:0 4px 14px #0004}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;z-index:40;max-width:90%;text-align:center;font-size:14px}
+.demo{background:var(--beige);color:var(--ink);font-size:13px;text-align:center;padding:7px 12px}
+.empty{padding:40px 0;color:var(--mute)}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:u .8s ease both}@keyframes u{from{opacity:0;transform:translateY(18px)}}}
+</style></head><body>
+<script>
+/* ============ CONFIGURATION — À MODIFIER AVANT LA MISE EN LIGNE ============ */
+const CONFIG={
+  whatsapp:"",            // ex. format international sans + ni espaces : indicatif pays + numéro. À REMPLIR.
+  email:"",               // adresse e-mail officielle de BRAZIO. À REMPLIR.
+  hours:"Horaires d’assistance : à renseigner",
+  social:{Instagram:"",Facebook:"",TikTok:""}, // URLs complètes ; vide = masqué
+  ville:"Cameroun"
+};
+/* ============ CATÉGORIES ============ */
+const CATS=[["hommes","Vêtements pour hommes"],["femmes","Vêtements pour femmes"],["ensembles","Ensembles"],["tshirts","T-shirts et polos"],["chemises","Chemises"],["pantalons","Pantalons"],["robes","Robes"],["vestes","Vestes"],["chaussures","Chaussures"],["accessoires","Accessoires"]];
+/* ============ PRODUITS (EXEMPLES À REMPLACER) ============
+ id, name, cat, g (h/f/u), shape (top|pants|dress|shoes|acc), price (FCFA),
+ promo:{price,from:"AAAA-MM-JJ",to:"AAAA-MM-JJ"} ou absent, isNew, featured,
+ colors:[[nom,hex]], sizes:[...], stock:true/false, images:["url",...] (vide = visuel provisoire) */
+
+const P = [
+  {
+    id: "tshirt-oversize",
+    name: "T-shirt Oversize",
+    cat: "tshirts", g: "u", shape: "top",
+    price: 8000, isNew: true, featured: true,
+    colors: [["Noir","#111"],["Blanc","#f5f5f0"],["Beige","#d9c9ad"]],
+    sizes: ["S","M","L","XL"], stock: true,
+    desc: "Coupe ample, coton épais et doux. Pièce de base à porter en toute occasion.",
+    images: ["images/tshirt-oversize.jpg"]
+  },
+  {
+    id: "polo-classique",
+    name: "Polo Classique",
+    cat: "tshirts", g: "h", shape: "top",
+    price: 10000, featured: true,
+    colors: [["Noir","#111"],["Marine","#1f2b45"]],
+    sizes: ["M","L","XL","XXL"], stock: true,
+    desc: "Polo en maille piquée, col structuré, finition soignée.",
+    images: ["images/polo-classique.jpg"]
+  },
+  {
+    id: "chemise-lin",
+    name: "Chemise en lin",
+    cat: "chemises", g: "h", shape: "top",
+    price: 15000, isNew: true,
+    colors: [["Beige","#d9c9ad"],["Blanc","#f5f5f0"]],
+    sizes: ["S","M","L","XL"], stock: true,
+    desc: "Chemise légère et respirante, idéale pour la chaleur.",
+    images: ["images/chemise-lin.jpg"]
+  },
+  {
+    id: "pantalon-chino",
+    name: "Pantalon Chino",
+    cat: "pantalons", g: "h", shape: "pants",
+    price: 7000,
+    colors: [["Beige","#cdb892"],["Noir","#111"]],
+    sizes: ["38","40","42","44"], stock: true,
+    desc: "Coupe droite ajustée, tissu stretch confortable.",
+    images: ["images/pantalon-chino.jpg"]
+  },
+  {
+    id: "robe-satin",
+    name: "Robe Satin",
+    cat: "robes", g: "f", shape: "dress",
+    price: 18000, isNew: true, featured: true,
+    colors: [["Noir","#111"],["Champagne","#e1cfae"]],
+    sizes: ["S","M","L"], stock: true,
+    desc: "Robe fluide en satin, longueur midi. Pour vos soirées.",
+    images: ["images/robe-satin.jpg"]
+  },
+  {
+    id: "robe-ete",
+    name: "Robe d’été",
+    cat: "robes", g: "f", shape: "dress",
+    price: 8000,
+    colors: [["Blanc","#f5f5f0"],["Beige","#d9c9ad"]],
+    sizes: ["S","M","L","XL"], stock: true,
+    desc: "Robe légère à bretelles, coton léger.",
+    images: ["images/robe-ete.jpg"]
+  },
+  {
+    id: "veste-bomber",
+    name: "Veste Bomber",
+    cat: "vestes", g: "u", shape: "top",
+    price: 20000, featured: true,
+    colors: [["Noir","#111"],["Kaki","#4b5036"]],
+    sizes: ["M","L","XL"], stock: true,
+    desc: "Bomber zippé, doublure légère, poches latérales.",
+    images: ["images/veste-bomber.jpg"]
+  },
+  {
+    id: "ensemble-jogging",
+    name: "Ensemble Jogging",
+    cat: "ensembles", g: "u", shape: "pants",
+    price: 25000, isNew: true,
+    colors: [["Gris","#8a8780"],["Noir","#111"]],
+    sizes: ["S","M","L","XL"], stock: true,
+    desc: "Sweat et pantalon assortis, molleton confortable.",
+    images: ["images/ensemble-jogging.jpg"]
+  },
+  {
+    id: "sneakers-blanches",
+    name: "Sneakers Blanches",
+    cat: "chaussures", g: "u", shape: "shoes",
+    price: 20000,
+    colors: [["Blanc","#f5f5f0"],["Noir","#111"]],
+    sizes: ["39","40","41","42","43","44"], stock: true,
+    desc: "Sneakers épurées, semelle confortable.",
+    images: ["images/sneakers-blanches.jpg"]
+  },
+  {
+    id: "casquette",
+    name: "Casquette BRAZIO",
+    cat: "accessoires", g: "u", shape: "acc",
+    price: 5000,
+    colors: [["Noir","#111"],["Beige","#d9c9ad"]],
+    sizes: ["Unique"], stock: true,
+    desc: "Casquette ajustable, broderie discrète.",
+    images: ["images/casquette.jpg"]
+  }
+];
+
+/* ============ LOGIQUE ============ */
+const $=s=>document.querySelector(s),fmt=n=>n.toLocaleString("fr-FR")+" FCFA",ID=i=>P.find(p=>p.id===i);
+const today=()=>new Date().toISOString().slice(0,10);
+const promo=p=>p.promo&&(!p.promo.from||p.promo.from<=today())&&(!p.promo.to||p.promo.to>=today());
+const eff=p=>promo(p)?p.promo.price:p.price;
+let cart=[];try{cart=JSON.parse(localStorage.getItem("brazio-cart")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("brazio-cart",JSON.stringify(cart))}catch(e){}};
+let S={v:"home",id:null,f:{cat:"",g:"",q:"",sort:"",n:false,pr:false},sel:{size:"",color:"",img:0}};
+function go(v,id){S.v=v;S.id=id||null;if(v==="product")S.sel={size:"",color:"",img:0};$("#nav").classList.remove("open");render();scrollTo(0,0)}
+function shop(f){S.f=Object.assign({cat:"",g:"",q:"",sort:"",n:false,pr:false},f||{});go("shop")}
+function toast(m){const t=document.createElement("div");t.className="toast";t.textContent=m;t.setAttribute("role","status");document.body.append(t);setTimeout(()=>t.remove(),3200)}
+const PATH={top:"M30 15 10 30l8 15 10-5v65h44V40l10 5 8-15-20-15Q50 28 30 15Z",pants:"M30 10h40l6 98H54L50 45l-4 63H24Z",dress:"M38 10h24l-2 28 22 70H18l22-70Z",shoes:"M12 70h28l8 12 40 2q6 2 4 12H12Z",acc:"M22 50h56l6 50H16Z M34 50Q34 26 50 26T66 50"};
+function img(p,i,h){i=i||0;if(p.images&&p.images[i])return `<img src="${p.images[i]}" alt="${p.name} — vue ${i+1}" loading="lazy">`;
+ return `<svg viewBox="0 0 100 120" role="img" aria-label="${p.name} (visuel provisoire)"><rect width="100" height="120" fill="var(--card)"/><path d="${PATH[p.shape]}" fill="${(h||p.colors[0][1])}" stroke="var(--ink)" stroke-opacity=".35" stroke-width="1"/></svg>`}
+const sw=p=>p.colors.map(c=>`<span class="sw" style="background:${c[1]}"></span>`).join("")+`<span class="mt">${p.colors.map(c=>c[0]).join(", ")}</span>`;
+const price=p=>`<span class="pr">${fmt(eff(p))}</span>${promo(p)?`<span class="old">${fmt(p.price)}</span>`:""}`;
+function card(p){return `<article class="card"><button class="im" onclick="go('product','${p.id}')" aria-label="Voir ${p.name}">${img(p)}${promo(p)?`<span class="tag">-${Math.round(100-p.promo.price/p.price*100)}%</span>`:p.isNew?`<span class="tag">Nouveau</span>`:""}</button>
+<h3>${p.name}</h3><div>${price(p)}</div><div class="mt" style="margin-top:4px">${sw(p)}</div><div class="mt">Tailles : ${p.sizes.join(", ")}</div>
+<div class="row"><button class="btn o s" onclick="go('product','${p.id}')">Voir le produit</button><button class="btn wa s" onclick="go('product','${p.id}');toast('Choisissez taille et couleur pour commander')">Commander sur WhatsApp</button></div></article>`}
+/* messages */
+function lines(items,form){let t=0,o="Articles :\n";items.forEach(it=>{const p=ID(it.id),u=eff(p),s=u*it.qty;t+=s;o+=`\n- ${p.name}\n  Taille : ${it.size}\n  Couleur : ${it.color}\n  Quantité : ${it.qty}\n  Prix unitaire : ${fmt(u)}\n  Sous-total : ${fmt(s)}\n  Référence : ${p.id}\n`});
+ o+=`\nMontant total estimé : ${fmt(t)}.\n`;
+ if(form){o+="\nMes informations :\n";for(const k in form)if(form[k])o+=`- ${k} : ${form[k]}\n`}
+ return o+"\nMerci de me confirmer la disponibilité des articles, les frais de livraison et les modalités de paiement."}
+function getForm(){const g=i=>($("#"+i)||{}).value||"";const f={"Nom complet":g("fn"),"Téléphone":g("ft"),"Ville":g("fv"),"Quartier":g("fq"),"Adresse / point de livraison":g("fa"),"Contact préféré":g("fc"),"Commentaires":g("fm")};
+ const any=Object.entries(f).some(([k,v])=>k!=="Contact préféré"&&v);if(any&&(!f["Nom complet"]||!f["Téléphone"])){toast("Indiquez au moins votre nom et votre téléphone.");return false}return any?f:null}
+function sendWA(items,form){if(form===false)return;if(!CONFIG.whatsapp){toast("Numéro WhatsApp non configuré : renseignez CONFIG.whatsapp avant la mise en ligne.");return}
+ window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Bonjour BRAZIO ! Je souhaite passer une commande.\n\n"+lines(items,form))}`,"_blank","noopener");toast("WhatsApp s’ouvre : vous devez encore envoyer le message.")}
+function sendMail(items,form){if(form===false)return;if(!CONFIG.email){toast("Adresse e-mail non configurée : renseignez CONFIG.email avant la mise en ligne.");return}
+ window.open(`mailto:${CONFIG.email}?subject=${encodeURIComponent("Commande BRAZIO — Demande de confirmation")}&body=${encodeURIComponent("Bonjour BRAZIO,\n\nJe souhaite passer une commande.\n\n"+lines(items,form))}`,"_blank");toast("Votre messagerie s’ouvre : l’envoi n’est pas automatique.")}
+function cartWA(){if(!cart.length)return toast("Votre panier est vide.");sendWA(cart,getForm())}
+function cartMail(){if(!cart.length)return toast("Votre panier est vide.");sendMail(cart,getForm())}
+function chk(){const s=S.sel;if(!s.size||!s.color){toast("Choisissez une taille et une couleur.");return null}return {id:S.id,size:s.size,color:s.color,qty:1}}
+function addCart(){const it=chk();if(!it)return;const e=cart.find(c=>c.id===it.id&&c.size===it.size&&c.color===it.color);e?e.qty++:cart.push(it);save();upd();toast("Ajouté au panier")}
+function qty(i,d){cart[i].qty+=d;if(cart[i].qty<1)cart.splice(i,1);save();upd();render()}
+function del(i){cart.splice(i,1);save();upd();render()}
+function share(){const p=ID(S.id),t=`${p.name} — BRAZIO (${fmt(eff(p))})`;if(navigator.share)navigator.share({title:t,text:t,url:location.href}).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(t+" "+location.href).then(()=>toast("Lien copié"),()=>toast(t));else toast(t)}
+const upd=()=>{const n=cart.reduce((a,c)=>a+c.qty,0);$("#cb").textContent=n;$("#cb").style.display=n?"block":"none"};
+function pick(k,v){S.sel[k]=v;if(k==="color"&&ID(S.id).images.length){}render()}
+/* vues */
+const V={
+home(){const n=P.filter(p=>p.isNew),f=P.filter(p=>p.featured);return `<div class="hero"><div class="w"><h1>Exprime ton style avec BRAZIO</h1><p>Prêt-à-porter et accessoires pour hommes et femmes. Choisissez vos pièces, composez votre panier, puis finalisez avec nous sur WhatsApp ou par e-mail.</p><button class="btn" style="background:#f4efe6;color:#0a0a0a;border-color:#f4efe6" onclick="shop()">Découvrir la collection</button></div><div class="big" aria-hidden="true">BZ</div></div>
+<section><div class="w"><div class="hd"><h2>Catégories</h2></div><div class="cats">${CATS.map(c=>`<button class="cat" onclick="shop({${["hommes","femmes"].includes(c[0])?`g:'${c[0]==="hommes"?"h":"f"}'`:`cat:'${c[0]}'`}})">${c[1]}</button>`).join("")}</div></div></section>
+<section style="padding-top:0"><div class="w"><div class="hd"><h2>Nouveautés</h2><button class="btn o s" onclick="shop({n:true})">Tout voir</button></div><div class="grid">${n.map(card).join("")||'<p class="empty">Aucune nouveauté pour le moment.</p>'}</div></div></section>
+<section style="background:var(--card)"><div class="w"><div class="hd"><h2>Produits mis en avant</h2></div><div class="grid">${f.map(card).join("")}</div></div></section>`},
+shop(){const F=S.f;let l=P.filter(p=>(!F.cat||p.cat===F.cat)&&(!F.g||p.g===F.g||p.g==="u")&&(!F.n||p.isNew)&&(!F.pr||promo(p))&&(!F.q||p.name.toLowerCase().includes(F.q.toLowerCase())));
+ if(F.sort)l.sort((a,b)=>(eff(a)-eff(b))*(F.sort==="asc"?1:-1));
+ const pill=(k,v,t)=>`<button class="${F[k]===v?"on":""}" onclick="S.f.${k}=${JSON.stringify(v)};render()">${t}</button>`;
+ return `<div class="w" style="padding-top:36px;padding-bottom:56px"><div class="hd"><h2>${F.n?"Nouveautés":F.pr?"Promotions":"Boutique"}</h2><span class="mt">${l.length} article(s)</span></div><div class="shop"><aside class="fl">
+<div><label for="sq">Rechercher</label><input id="sq" type="search" value="${F.q}" placeholder="Nom du vêtement" oninput="S.f.q=this.value;clearTimeout(window.t);window.t=setTimeout(()=>{render();$('#sq').focus();$('#sq').setSelectionRange(99,99)},250)"></div>
+<div><label>Catégorie</label><div class="pill">${pill("cat","","Toutes")}${CATS.filter(c=>c[0]!=="hommes"&&c[0]!=="femmes").map(c=>pill("cat",c[0],c[1])).join("")}</div></div>
+<div><label>Pour</label><div class="pill">${pill("g","","Tous")}${pill("g","h","Hommes")}${pill("g","f","Femmes")}</div></div>
+<div><label>Sélection</label><div class="pill">${pill("n",false,"Tout")}${pill("n",true,"Nouveautés")}</div></div>
+<div><label for="so">Trier par prix</label><select id="so" onchange="S.f.sort=this.value;render()"><option value="">Par défaut</option><option value="asc" ${F.sort==="asc"?"selected":""}>Croissant</option><option value="desc" ${F.sort==="desc"?"selected":""}>Décroissant</option></select></div></aside>
+<div class="grid">${l.map(card).join("")||`<p class="empty">${F.pr?"Aucune promotion en cours.":"Aucun article ne correspond à votre recherche."}</p>`}</div></div></div>`},
+product(){const p=ID(S.id),s=S.sel,pc=img(p,s.img);const col=(p.colors.find(c=>c[0]===s.color)||p.colors[0])[1];
+ return `<div class="w" style="padding-top:28px;padding-bottom:56px"><button class="btn o s" onclick="go('shop')">Retour à la boutique</button><div class="pd" style="margin-top:20px"><div><div class="card"><div class="im" style="aspect-ratio:4/5">${p.images.length?img(p,s.img):img(p,0,col)}</div></div>${p.images.length>1?`<div class="th">${p.images.map((_,i)=>`<button class="${s.img===i?"on":""}" onclick="S.sel.img=${i};render()" aria-label="Photo ${i+1}">${img(p,i)}</button>`).join("")}</div>`:""}</div>
+<div><h1 style="font-size:clamp(30px,5vw,46px)">${p.name}</h1><p style="font-size:20px;margin:10px 0">${price(p)}</p><p>${p.desc}</p><p class="mt">${p.stock?"Disponible, à confirmer par le vendeur lors de la commande.":"Actuellement indisponible."}</p>
+<div class="opt"><b>Couleur : ${s.color||"à choisir"}</b><div class="pill">${p.colors.map(c=>`<button class="${s.color===c[0]?"on":""}" onclick="pick('color','${c[0]}')"><span class="sc"><span class="sw" style="background:${c[1]};margin:0"></span>${c[0]}</span></button>`).join("")}</div></div>
+<div class="opt"><b>Taille : ${s.size||"à choisir"}</b><div class="pill">${p.sizes.map(z=>`<button class="${s.size===z?"on":""}" onclick="pick('size','${z}')">${z}</button>`).join("")}</div></div>
+<div class="row"><button class="btn" ${p.stock?"":"disabled"} onclick="addCart()">Ajouter au panier</button><button class="btn wa" ${p.stock?"":"disabled"} onclick="{const i=chk();i&&sendWA([i])}">Commander sur WhatsApp</button><button class="btn o" onclick="share()">Partager</button></div>
+<details style="margin-top:22px"><summary>Guide des tailles</summary><div class="tw"><table><tr><th>Taille</th><th>Tour de poitrine (cm)</th><th>Tour de taille (cm)</th></tr><tr><td>S</td><td>88–94</td><td>72–78</td></tr><tr><td>M</td><td>94–100</td><td>78–84</td></tr><tr><td>L</td><td>100–106</td><td>84–90</td></tr><tr><td>XL</td><td>106–112</td><td>90–96</td></tr></table></div><p class="note">Mesures indicatives, à adapter à votre collection.</p></details></div></div></div>`},
+cart(){const tot=cart.reduce((a,c)=>a+eff(ID(c.id))*c.qty,0);
+ return `<div class="w" style="padding-top:36px;padding-bottom:56px"><div class="hd"><h2>Votre panier</h2><button class="btn o s" onclick="shop()">Continuer mes achats</button></div>${!cart.length?'<p class="empty">Votre panier est vide.</p>':`<div class="cg"><div>${cart.map((c,i)=>{const p=ID(c.id);return `<div class="ci"><div class="im card">${img(p,0,(p.colors.find(x=>x[0]===c.color)||p.colors[0])[1])}</div><div><b>${p.name}</b><div class="mt">Taille ${c.size} · ${c.color}</div><div class="mt">${fmt(eff(p))} l’unité</div><div class="q" style="margin-top:6px"><button onclick="qty(${i},-1)" aria-label="Moins">−</button><span>${c.qty}</span><button onclick="qty(${i},1)" aria-label="Plus">+</button></div></div><div style="text-align:right"><b>${fmt(eff(p)*c.qty)}</b><br><button class="btn o s" style="margin-top:8px" onclick="del(${i})">Supprimer</button></div></div>`}).join("")}
+<p style="font-size:22px;text-align:right;margin-top:18px"><b>Total estimé : ${fmt(tot)}</b></p><p class="note">Disponibilités, stocks et frais de livraison sont confirmés par le vendeur lors de la prise de commande. Aucune commande n’est enregistrée par ce site.</p></div>
+<div class="box"><h3 style="font-size:22px">Préparer ma commande</h3><p class="note" style="margin-top:6px">Formulaire facultatif. Ces informations ne sont pas stockées : elles servent uniquement à rédiger votre message.</p><div class="fg"><div><label for="fn">Nom complet</label><input id="fn" autocomplete="name"></div><div><label for="ft">Téléphone</label><input id="ft" type="tel" autocomplete="tel"></div><div><label for="fv">Ville</label><input id="fv"></div><div><label for="fq">Quartier</label><input id="fq"></div><div class="f"><label for="fa">Adresse ou point de livraison</label><input id="fa"></div><div class="f"><label for="fc">Contact préféré</label><select id="fc"><option>WhatsApp</option><option>Appel</option><option>E-mail</option></select></div><div class="f"><label for="fm">Commentaires</label><textarea id="fm" rows="2"></textarea></div></div>
+<div class="row"><button class="btn wa" onclick="cartWA()">Envoyer ma commande sur WhatsApp</button><button class="btn o" onclick="cartMail()">Préparer ma commande par e-mail</button></div><p class="note">N’indiquez jamais de numéro de carte ni de mot de passe. L’ouverture de WhatsApp ou de votre messagerie ne vaut pas envoi : vous devez valider le message.</p></div></div>`}</div>`},
+contact(){const wa=CONFIG.whatsapp?`https://wa.me/${CONFIG.whatsapp}`:"";return `<div class="w" style="padding-top:36px;padding-bottom:56px"><h2 style="margin-bottom:20px">Contact et assistance</h2><div class="cg"><div><div class="row" style="margin:0 0 16px"><button class="btn wa" onclick="CONFIG.whatsapp?window.open('${wa}','_blank','noopener'):toast('Numéro WhatsApp non configuré.')">Écrire sur WhatsApp</button><button class="btn o" onclick="CONFIG.email?location.href='mailto:'+CONFIG.email:toast('Adresse e-mail non configurée.')">${CONFIG.email||"E-mail (à configurer)"}</button></div><p>${CONFIG.hours}</p>${socials()}</div><div><h3 style="font-size:22px">FAQ</h3>
+<details><summary>Comment commander ?</summary><p>Ajoutez vos articles au panier, puis envoyez votre commande par WhatsApp ou e-mail. Le vendeur confirme ensuite disponibilité, livraison et paiement.</p></details><details><summary>Ma commande est-elle enregistrée automatiquement ?</summary><p>Non. Le site prépare un message que vous devez envoyer vous-même.</p></details><details><summary>Les prix sont-ils définitifs ?</summary><p>Le total est une estimation. Les frais de livraison sont confirmés avant paiement.</p></details><details><summary>Mon panier est-il sauvegardé ?</summary><p>Oui, sur votre appareil uniquement, tant que votre navigateur le permet.</p></details></div></div></div>`},
+infos(){return `<div class="w" style="padding-top:36px;padding-bottom:56px;max-width:760px"><h2>Informations légales et pratiques</h2><p class="note">Textes modèles à adapter par BRAZIO avant la mise en ligne.</p>
+<details open><summary>Livraison</summary><p>Zones, délais et tarifs de livraison : à définir par BRAZIO et confirmés lors de la commande.</p></details><details><summary>Conditions de vente</summary><p>Les prix sont en FCFA. La vente est conclue après confirmation de disponibilité et accord de paiement par BRAZIO.</p></details><details><summary>Politique de retour</summary><p>Délai et conditions d’échange ou de retour : à définir par BRAZIO.</p></details><details><summary>Mentions légales</summary><p>Raison sociale, adresse, immatriculation : à compléter.</p></details><details><summary>Confidentialité</summary><p>Ce site n’a aucune base de données et ne collecte rien. Le panier est conservé dans votre navigateur. Les informations saisies dans le formulaire servent uniquement à préparer votre message.</p></details></div>`}};
+function socials(){const e=Object.entries(CONFIG.social).filter(([k,v])=>v);return e.length?`<p>${e.map(([k,v])=>`<a href="${v}" target="_blank" rel="noopener">${k}</a>`).join(" · ")}</p>`:'<p class="mt">Réseaux sociaux : à configurer.</p>'}
+function render(){document.title=S.v==="product"&&S.id?ID(S.id).name+" — BRAZIO":"BRAZIO — Ton style, ton identité.";$("#main").innerHTML=V[S.v]();
+ $("#ft").innerHTML=`<div class="w"><div class="g"><div><h3>BRAZIO</h3><p>Ton style, ton identité. Prêt-à-porter et accessoires de mode. ${CONFIG.ville}.</p></div><div><h3>Contact</h3><button onclick="go('contact')">WhatsApp et e-mail</button><p style="margin:6px 0">${CONFIG.email||"E-mail à configurer"}</p>${socials()}</div><div><h3>Informations</h3><button onclick="go('infos')">Livraison</button><button onclick="go('infos')">Conditions de vente</button><button onclick="go('infos')">Politique de retour</button><button onclick="go('infos')">Mentions légales et confidentialité</button></div></div></div>`}
+</script>
+<div class="demo">Catalogue d’exemple : remplacez les produits, le numéro WhatsApp et l’e-mail dans le fichier avant la mise en ligne.</div>
+<header><div class="w"><div class="bar"><button class="ib burger" aria-label="Menu" onclick="$('#nav').classList.toggle('open')">☰</button><button class="logo" onclick="go('home')" aria-label="BRAZIO, accueil">BRAZIO</button>
+<nav id="nav" aria-label="Navigation"><button onclick="go('home')">Accueil</button><button onclick="shop()">Boutique</button><button onclick="shop({g:'h'})">Hommes</button><button onclick="shop({g:'f'})">Femmes</button><button onclick="shop({n:true})">Nouveautés</button><button onclick="shop({pr:true})">Promotions</button><button onclick="go('contact')">Contact</button></nav><span class="sp" style="flex:1"></span>
+<button class="ib" aria-label="Rechercher" onclick="$('#sb').classList.toggle('open');$('#si').focus()">⌕</button><button class="ib" aria-label="Panier" onclick="go('cart')">🛍<span class="badge" id="cb" style="display:none">0</span></button></div>
+<div class="srch" id="sb"><input id="si" type="search" placeholder="Rechercher un vêtement" aria-label="Rechercher" onkeydown="if(event.key==='Enter'){shop({q:this.value});$('#sb').classList.remove('open')}"></div></div></header>
+<main id="main"></main><footer id="ft"></footer>
+<button class="fab" aria-label="Discuter sur WhatsApp" onclick="CONFIG.whatsapp?window.open('https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent('Bonjour BRAZIO !'),'_blank','noopener'):toast('Numéro WhatsApp non configuré.')">WhatsApp</button>
+<script>upd();render()</script>
+</body></html>
